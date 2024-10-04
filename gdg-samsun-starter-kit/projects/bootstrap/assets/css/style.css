@@ -1,0 +1,13 @@
+.ls-categories .list-group-item:not(.active):hover{
+    background-color: #7d8a97;
+}
+
+footer{
+    height: 100px;
+}
+
+footer p{
+    line-height: 100px;
+    text-align: center;
+}
+
