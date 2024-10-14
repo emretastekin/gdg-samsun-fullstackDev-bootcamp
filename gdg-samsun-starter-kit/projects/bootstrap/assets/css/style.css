@@ -11,3 +11,21 @@ footer p{
     text-align: center;
 }
 
+/*
+#navbar{
+    background-color: #f38509 !important;
+}
+*/
+
+
+@media screen and (max-width: 768px){
+    nav.navbar{
+        background-color: #0c0cc9 !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    nav.navbar {
+        background-color: #cd10da !important;
+    }
+}

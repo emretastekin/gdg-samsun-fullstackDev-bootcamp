@@ -1,0 +1,53 @@
+body{
+    font-family: "Poppins", system-ui !important;
+}
+
+
+.font-playfair{
+    font-family: "Playfair Display", serif !important;
+}
+
+nav a{
+    font-family: "Poppins", system-ui;
+    font-weight: 600 !important;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav img{
+    height: 25px;
+}
+
+nav .login a:nth-child(2){
+    font-size: 20px;
+    font-weight: 500 !important;
+
+}
+
+nav li.nav-item{
+    margin-right: 20px;
+}
+
+nav li.nav-item::after{
+    width: 0;
+    display: block;
+    content: "";
+    height: 2px;
+    background-color: #2b3035;
+    transition: all 0.2s ease-in-out;
+}
+
+nav li.nav-item:hover::after{
+    width: 100%;
+}
+
+.main-title{
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 60px;
+
+}
+
+.main-title span{
+    color: #674040;
+}

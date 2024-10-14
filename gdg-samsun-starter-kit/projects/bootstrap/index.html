@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-danger">
+<nav class="navbar navbar-expand-lg bg-danger" id="navbar">
     <div class="container-fluid">
         <a class="navbar-brand text-white" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,11 +33,11 @@
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item d-none d-md-block">
                     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form class="d-none d-md-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
@@ -47,13 +47,25 @@
 
 <main>
     <div class="container">
-
         <div class="row pt-5">
-            <div class="col-9">
-                <h3 class="mb-4">Lorem ipsum dolor.</h3>
+            <div class="col-12 d-block d-md-none">
+                <h3 class="mb-4">Kategoriler</h3>
+                <ul class="list-group ls-categories">
+                    <li class="list-group-item text-uppercase border-0 active ">frontend</li>
+                    <li class="list-group-item text-uppercase border-0">html</li>
+                    <li class="list-group-item text-uppercase border-0">css</li>
+                    <li class="list-group-item text-uppercase border-0">javascript</li>
+                    <li class="list-group-item text-uppercase border-0 active">backend</li>
+                    <li class="list-group-item text-uppercase border-0 ">php</li>
+                    <li class="list-group-item text-uppercase border-0">ruby</li>
+                    <li class="list-group-item text-uppercase border-0">c#</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-9">
+                <h3 class="mb-4 mt-4 mt-md-0">Lorem ipsum dolor.</h3>
 
                 <div class="row" >
-                    <div class="col-md-4 mb-4">
+                    <div class="col-6 col-md-4 mb-4">
                         <div class="card">
                             <img src="assets/images/ayakkabı.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -63,7 +75,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
+                    <div class="col-6 col-md-4 mb-4">
                         <div class="card">
                             <img src="assets/images/ayakkabı.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -73,7 +85,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
+                    <div class="col-6 col-md-4 mb-4">
                         <div class="card">
                             <img src="assets/images/ayakkabı.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -83,7 +95,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
+                    <div class="col-6 col-md-4 mb-4">
                         <div class="card">
                             <img src="assets/images/ayakkabı.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -93,7 +105,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
+                    <div class="col-6 col-md-4 mb-4">
                         <div class="card">
                             <img src="assets/images/ayakkabı.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -103,7 +115,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
+                    <div class="col-6 col-md-4 mb-4">
                         <div class="card">
                             <img src="assets/images/ayakkabı.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -113,7 +125,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
+                    <div class="col-6 col-md-4 mb-4">
                         <div class="card">
                             <img src="assets/images/ayakkabı.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -123,7 +135,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
+                    <div class="col-6 col-md-4 mb-4">
                         <div class="card">
                             <img src="assets/images/ayakkabı.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -133,7 +145,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
+                    <div class="col-6 col-md-4 mb-4">
                         <div class="card">
                             <img src="assets/images/ayakkabı.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -145,7 +157,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 d-none d-md-block">
                 <h3 class="mb-4">Kategoriler</h3>
                 <ul class="list-group ls-categories">
                     <li class="list-group-item text-uppercase border-0 active ">frontend</li>
